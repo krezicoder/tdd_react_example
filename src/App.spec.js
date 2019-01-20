@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import { shallow } from "enzyme";
 import App from "./App";
+import Calculator from "./components/Calculator/Calculator";
 
 describe("AppComponent", () => {
   let wrapper;
@@ -12,7 +13,6 @@ describe("AppComponent", () => {
   });
 
   it("should render the Calculator Component", () => {
-    const wrapper = shallow(<App />);
     expect(wrapper.containsMatchingElement(<Calculator />)).toEqual(true);
   });
 });
