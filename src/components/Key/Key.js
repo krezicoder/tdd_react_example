@@ -3,7 +3,8 @@ import "../../css/Key.css";
 
 class Key extends Component {
   render() {
-    return <div className="key-continer">Key</div>;
+    const { keyValue } = this.props;
+    return <div className="key-continer">{keyValue}</div>;
   }
 }
 
