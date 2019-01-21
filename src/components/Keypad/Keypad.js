@@ -14,7 +14,9 @@ class Keypad extends Component {
       <div className="keypad-container">
         <div className="numbers-container">{numberKeys}</div>
         <div className="operators-container">{operatorKeys}</div>
-        <Key keyType={"submit-key"} keyValue={"="} />
+        <div className="submit-container">
+          <Key keyType="submit-key" keyValue="=" />
+        </div>
       </div>
     );
   }

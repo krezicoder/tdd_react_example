@@ -7,7 +7,7 @@ describe("Keypad", () => {
   beforeEach(() => (wrapper = shallow(<Keypad numbers={[]} operators={[]} />)));
 
   it("should render a <div />", () => {
-    expect(wrapper.find("div").length).toEqual(3);
+    expect(wrapper.find("div").length).toEqual(4);
   });
 
   it("should render an instance of the Key component", () => {
