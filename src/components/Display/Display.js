@@ -3,7 +3,8 @@ import "../../css/Display.css";
 
 class Display extends Component {
   render() {
-    return <div className="display-container" />;
+    const { displayValue } = this.props;
+    return <div className="display-container">{displayValue}</div>;
   }
 }
 
