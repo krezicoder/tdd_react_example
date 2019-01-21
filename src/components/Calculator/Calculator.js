@@ -7,14 +7,15 @@ class Calculator extends Component {
   constructor() {
     super();
     this.state = {
-      displayValue: 0
+      displayValue: 0,
+      numbers: []
     };
   }
   render() {
     return (
       <div className="calculator-container">
         <Display displayValue={this.state.displayValue} />
-        <Keypad />
+        <Keypad numbers={this.state.numbers} />
       </div>
     );
   }
