@@ -23,4 +23,8 @@ describe("CalculatorComponent", () => {
       )
     ).toEqual(true);
   });
+
+  it("should render the Keypad Component", () => {
+    expect(wrapper.containsMatchingElement(<Keypad />)).toEqual(true);
+  });
 });
