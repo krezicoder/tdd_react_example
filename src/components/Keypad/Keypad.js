@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import Key from "../Key/Key";
 class Keypad extends Component {
   render() {
     const { numbers } = this.props;
@@ -11,6 +12,7 @@ class Keypad extends Component {
       <div className="keypad-container">
         <div className="numbers-container">{numberKeys}</div>
         <div className="operators-container">{operatorKeys}</div>
+        <Key />
       </div>
     );
   }
