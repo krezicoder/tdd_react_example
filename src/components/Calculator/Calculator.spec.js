@@ -15,4 +15,12 @@ describe("CalculatorComponent", () => {
   it("should render the Display Component", () => {
     expect(wrapper.containsMatchingElement(<Display />)).toEqual(true);
   });
+
+  it("should render the Display Component with Display Value", () => {
+    expect(
+      wrapper.containsMatchingElement(
+        <Display displayValue={wrapper.instance().state.displayValue} />
+      )
+    ).toEqual(true);
+  });
 });
