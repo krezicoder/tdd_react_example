@@ -4,10 +4,10 @@ import Keypad from "./Keypad";
 
 describe("Keypad", () => {
   let wrapper;
-  beforeEach(() => (wrapper = shallow(<Keypad numbers={[]} />)));
+  beforeEach(() => (wrapper = shallow(<Keypad numbers={[]} operators={[]} />)));
 
   it("should render a <div />", () => {
-    expect(wrapper.find("div").length).toEqual(2);
+    expect(wrapper.find("div").length).toEqual(3);
   });
 
   it("renders the values of numbers", () => {
