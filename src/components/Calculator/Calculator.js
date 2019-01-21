@@ -3,7 +3,7 @@ import "../../css/Calculator.css";
 
 class Calculator extends Component {
   render() {
-    return <div />;
+    return <div className="calculator-container" />;
   }
 }
 
