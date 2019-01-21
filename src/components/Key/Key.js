@@ -1,8 +1,9 @@
 import React, { Component } from "react";
+import "../../css/Key.css";
 
 class Key extends Component {
   render() {
-    return <div>Key</div>;
+    return <div className="key-continer">Key</div>;
   }
 }
 
