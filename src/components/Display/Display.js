@@ -3,7 +3,7 @@ import "../../css/Display.css";
 
 class Display extends Component {
   render() {
-    return <div />;
+    return <div className="display-container" />;
   }
 }
 
