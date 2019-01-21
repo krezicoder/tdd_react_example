@@ -4,7 +4,11 @@ import "../../css/Display.css";
 class Display extends Component {
   render() {
     const { displayValue } = this.props;
-    return <div className="display-container">{displayValue}</div>;
+    return (
+      <div className="display-container">
+        <p className="display-value">{displayValue}</p>
+      </div>
+    );
   }
 }
 
